@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function findpower()
+    {
+        var x =parseInt(document.getElementById("nm1").value);
+        var y =parseInt(document.getElementById("nm2").value);
+        var sum =1;
+        for(i=1; i<=y;i++)
+        {
+            sum= sum * x;
+        }
+        document.getElementById("mydiv").innerHTML ="Power value is:" +sum;
+    
+     }
+</script>
+<body>
+    <h4>Qn8.Write a function pow(x,y) that calculates xy. Do not use the Math predefined object</h4>
+    <label for="nm1">Enter Base :</label>
+    <input type="number" id="nm1" name="nm1">
+    <label for="nm2">Enter Power:</label>
+    <input type="number" id="nm2" name="nm2">
+    <button type="button" id="btn" name="btn" onclick="findpower()">Submit</button>
+    <div id="mydiv"></div>
+
+</body>
+</html>
+</html>
+

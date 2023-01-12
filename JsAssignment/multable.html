@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function find()
+        {
+            var n = document.getElementById("nm").value;
+            for(i=1;i<=10;i++)
+            {
+                var no = n*i;
+                document.getElementById("mydiv").innerHTML +=n+ "*" + i + "=" +no+ "<br>" ;
+            }
+            
+
+        }
+    </script>
+</head>
+<body>
+    <h4>Qn5.Write a program to print the multiplication table of a given number up to 10 multiples. </h4>
+    <label for="">Enter a number :</label>
+    <input type="number" id="nm" name="nm">
+    <button type="button" id="btn" name="btn" onclick="find()">Submit</button>
+    <div id="mydiv">
+
+    </div>
+</body>
+</html>

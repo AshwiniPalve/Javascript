@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function maxnumber()
+        {
+            var max;
+            var num1=parseInt(document.getElementById("num1").value);
+            var num2=parseInt(document.getElementById("num2").value);
+            var num3=parseInt(document.getElementById("num3").value);
+            if(num1>num2 && num1>num3)
+            {
+                max=num1;
+            }
+            else if(num2>num1 && num2>num3)
+            {
+                max=num2;
+            }
+            else
+            {
+                max=num3;
+            }
+    
+            document.getElementById("res").value=max;
+            prompt(max);
+        }
+
+    </script>
+</head>
+<body>
+     <h4>Qn1.Write a program to accept three positive numbers and output the largest of them.</h4>
+     
+     Number1 : <input type="text" name="num1" id="num1">
+     Number2 : <input type="text" name="num2" id="num2">
+     Number3 : <input type="text" name="num3" id="num3">
+     <button type="button" id="btn" name="btn" onclick="maxnumber()">Find maximum Number</button>
+     <br><br><br>
+     result  : <input type="text" name="result" id="res">
+     <div id="mydiv">
+       
+       
+
+     </div>
+</body>
+</html>
+
+ 
+Question 2:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function print()
+        {
+            var num=parseInt(document.getElementById("nm").value);
+            var nm = document.getElementById("name").value;
+            for(i=1;i<num;i++)
+            {
+               document.getElementById("mydiv").innerHTML+=nm+" ";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h4>Qn2.Accept an integer value and a message from user and print the message that many number of times.</h4>
+    <label for="">Enter your Number:</label>
+    <input type="number" id="nm" name="nm"><br><br>
+    <label for=""> Enter your Name  :</label>
+    <input type="text" id="name" name="name">
+    <button type="button" id="btn" name="btn" onclick="print()">Submit</button>
+<div id="mydiv"></div>
+</body>
+</html>
+
+Question 3
+
+ 
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+<head>
+
+    <script>
+        function shownumbers() {
+            var num = parseInt(document.getElementById("num").value);
+            var count = 1;
+            while (count <= num) {
+                document.getElementById("numbers").innerHTML += count + " ";
+                count++;
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            border: 2px solid saddlebrown;
+            font-family: cursive;
+            padding-left: 30%;
+            padding-top: 15%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>To list all even numbers less than or equal to the number.</h2>
+
+    <label for="num1">Enter a number plz!</label><br>
+    <input type="number" name="number" id="num"><br>
+
+    <button type="submit" onclick="shownumbers()">See result</button><br>
+
+    <p id="numbers"></p>
+</body>
+
+</html>
+
+Question 4 

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input{
+        width: 80px;
+    }
+    div{
+        margin-right: 40%;
+        margin-top: 10%;
+        margin-left: 30%;
+    }
+    fieldset{
+        position: relative;
+        animation-name: demo;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes demo {
+        0%   {background-color:dimgray;}
+        25%  {background-color:violet; }
+        50%  {background-color:rgb(157, 157, 240); }
+        75%  {background-color:rgb(160, 245, 160); }
+        100% {background-color:rgb(245, 146, 146);} 
+    }
+</style>
+<script>
+    function showDay(){
+        var weekarr = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+        var day = parseInt(document.getElementById("day").value);
+        var month = parseInt(document.getElementById("month").value);
+        var year = parseInt(document.getElementById("year").value);
+        var str = year+"-"+month+"-"+day
+        var dt = new Date(str)
+        var dd = dt.getDay();
+        alert(weekarr[dd])
+    }
+</script>
+<body >
+    <div >
+        <fieldset id="demo">
+            <h3>Enter date to get week day</h3>
+            <table>
+                <tr>
+                    <td><label for="day">Day</label><br></td>
+                    <td><label for="month">Month</label></td>
+                    <td><label for="year">Year</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="day" id="day"></td>
+                    <td><input type="text" name="month" id="month"></td>
+                    <td><input type="text" name="year" id="year"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="button" id="btn" onclick="showDay()">Submit</button></td>
+                    <td></td>
+                </tr>
+            </table>
+            
+        </fieldset>
+    </div>
+</body>
+</html>
+
